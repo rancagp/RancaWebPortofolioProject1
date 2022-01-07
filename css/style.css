@@ -1,0 +1,411 @@
+/*  html  */
+html {
+  scroll-behavior: smooth;
+}
+/* html Penutup */
+
+/* Body*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Body Penutup */
+
+/* Element Penutup */
+hr {
+  margin: 0 auto 30px auto;
+  width: 250px;
+  border-top: 3px solid #666;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Element Penutup */
+
+/* sidebar */
+#check {
+  display: none;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  font-family: sans-serif;
+  transition: 0.3s;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+  padding-top: 30px;
+}
+
+.sidebar ul li {
+  padding: 24px;
+  cursor: pointer;
+  transition: 0.3s background-color;
+}
+
+.sidebar ul li:hover {
+  background-color: #333;
+  opacity: 0.8;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #333;
+  color: rgb(216, 216, 216);
+}
+
+.header .header-logo {
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: 20px;
+}
+
+.header .header-logo h1 {
+  font-size: 20px;
+}
+
+.header .header-logo h1 a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.header .header-logo h1 a:hover {
+  opacity: 1;
+  color: aliceblue;
+}
+
+.header .header-list {
+  float: right;
+}
+
+.header .header-list ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin-right: 20px;
+}
+
+.header .header-list ul li a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.header .header-list ul li a:visited {
+  opacity: 1;
+  color: aliceblue;
+}
+
+.header .header-list ul li a:hover {
+  opacity: 1;
+}
+
+/* Mobile-Menu */
+
+.mobile-menu {
+  float: right;
+  display: none;
+  line-height: 50px;
+  margin-right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.mobile-menu:hover {
+  color: aliceblue;
+}
+
+/* Container */
+.container {
+  height: 200px;
+  font-family: sans-serif;
+}
+
+/* Home */
+.home {
+  text-align: center;
+  background-color: rgb(226, 226, 226);
+  padding: 170px 0 170px 0;
+}
+
+.home img {
+  width: 300px;
+  border-radius: 50%;
+  border: #666 3px solid;
+}
+
+.home h1 {
+  font-size: 40px;
+  padding-top: 10px;
+  font-family: serif;
+}
+
+.home p {
+  padding-top: 10px;
+}
+
+.home p a {
+  text-decoration: none;
+  color: #666;
+  opacity: 0.8;
+}
+
+.home p a:hover {
+  opacity: 1;
+}
+
+/* About */
+.about {
+  padding: 80px 0 120px 0;
+}
+
+.about h2 {
+  font-size: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.about p {
+  font-size: 20px;
+  text-align: start;
+  margin: 0 20px;
+}
+/* About Penutup */
+
+/* My Skill */
+.skill {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 100px 0 100px 0;
+  background-color: rgb(226, 226, 226);
+}
+
+.skill .skill-heading h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.skill .skill-heading hr {
+  width: 250px;
+  border-top: 3px solid #666;
+  margin-bottom: 20px;
+}
+
+.skill-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skill-content ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.skill ul li .css {
+  padding-right: 35px;
+}
+
+.skill-content ul li i {
+  font-size: 200px;
+  transition: all linear 0.3s;
+}
+
+.skill-content ul li p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* My Skill Penutup */
+
+/* Achievment */
+.achievement {
+  text-align: center;
+  padding: 100px 0 110px 0;
+  background-color: #ffff;
+}
+
+.achievement h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.achievement img {
+  filter: drop-shadow(2px 0px 2px black) drop-shadow(-2px 0px 2px black);
+  transition: 0.3s ease;
+}
+
+.achievement-img a:hover .after {
+  transform: scale(0.9);
+}
+
+/* Overlay */
+
+.overlay {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 999;
+  text-align: center;
+  transition: 0.8s;
+  padding: 50px 0 50px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+  animation: zoomdanfade 1s;
+}
+
+/* Animation */
+@keyframes zoomdanfade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* My Contact */
+.contact {
+  padding-top: 90px;
+  min-height: 400px;
+  background-color: rgb(226, 226, 226);
+}
+
+.contact h2 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contact ul {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact ul li {
+  display: inline;
+}
+
+.contact .fab {
+  font-size: 100px;
+  margin: 0 20px;
+}
+
+.contact ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* My Contact Penutup */
+
+/* Footer */
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #333;
+}
+
+.footer .copyright p {
+  color: #aaa;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 30px 0 20px 0px;
+}
+
+.footer .copyright p a {
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+}
+
+.footer .copyright p i {
+  color: lightblue;
+}
+
+.footer .sosmed {
+  text-align: center;
+}
+
+.footer .sosmed a i {
+  color: lightblue;
+  padding-left: 10px;
+}
+/* Footer Penutup */
+
+/* CSS Pendukung */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#back {
+  display: none;
+}
+
+/* CSS CLEAR */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: ' '; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}

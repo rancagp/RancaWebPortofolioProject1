@@ -1,0 +1,96 @@
+/* Normal */
+@media (min-width: 993px) {
+  .sidebar {
+    display: none;
+  }
+}
+/* Normal Penutup */
+
+/* Tablet */
+@media (max-width: 992px) {
+  /* Achievement */
+  .achievement img {
+    width: 80%;
+  }
+
+  .overlay img {
+    max-height: 70%;
+    margin-top: 150px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  }
+
+  /* mobile menu */
+  .mobile-menu {
+    display: block;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  /* Contact */
+  .contact .contact-form {
+    width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact .form-group select {
+    width: 509px;
+    height: 30px;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+/* HP */
+@media (max-width: 670px) {
+  /* container */
+  .container {
+    width: 100%;
+  }
+
+  /* about */
+  .about-p {
+    padding-left: 0px;
+  }
+
+  .about p {
+    text-indent: 30px;
+    font-size: 20px;
+  }
+
+  /* achievement */
+  .achievement img {
+    width: 80%;
+  }
+
+  .overlay img {
+    max-height: 50%;
+    margin-top: 150px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  }
+
+  /* My Skill */
+  .skill-content ul li {
+    display: block;
+    margin: 20px 0;
+  }
+  /* My Skill Penutup */
+
+  /* contact */
+  .contact .contact-form {
+    width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact .form-group select {
+    width: 409px;
+    height: 30px;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
